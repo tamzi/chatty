@@ -1,0 +1,2 @@
+/*
+single notiification will be handled as a modal instead of being a screen*/

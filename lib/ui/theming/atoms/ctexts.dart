@@ -12,7 +12,7 @@ abstract class _Ctext extends StatelessWidget {
     required this.text,
     required this.textAlign,
     required this.textOverflow,
-  })  : super(key: key);
+  }) : super(key: key);
 }
 
 // APPBAR TEXT ELEMENTS
@@ -22,8 +22,8 @@ abstract class _Ctext extends StatelessWidget {
 class CAppBarHeader extends _Ctext {
   const CAppBarHeader(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -41,8 +41,8 @@ class CAppBarHeader extends _Ctext {
 class CAppBarDescription extends _Ctext {
   const CAppBarDescription(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -62,8 +62,8 @@ class CAppBarDescription extends _Ctext {
 class CHeader extends _Ctext {
   const CHeader(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -83,8 +83,8 @@ class CHeader extends _Ctext {
 class CTitle extends _Ctext {
   const CTitle(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -103,8 +103,8 @@ class CTitle extends _Ctext {
 class CDescriptionText extends _Ctext {
   const CDescriptionText(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -123,8 +123,8 @@ class CDescriptionText extends _Ctext {
 class CBodyText extends _Ctext {
   const CBodyText(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -145,8 +145,8 @@ class CBodyText extends _Ctext {
 class CCardHeader extends _Ctext {
   const CCardHeader(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -168,8 +168,8 @@ class CCardHeader extends _Ctext {
 class CBtnText extends _Ctext {
   const CBtnText(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -187,8 +187,8 @@ class CBtnText extends _Ctext {
 class CFlatBtnText extends _Ctext {
   const CFlatBtnText(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -207,8 +207,8 @@ class CFlatBtnText extends _Ctext {
 class CBtnTextWhite extends _Ctext {
   const CBtnTextWhite(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -227,8 +227,8 @@ class CBtnTextWhite extends _Ctext {
 class CBtnTextError extends _Ctext {
   const CBtnTextError(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
@@ -247,8 +247,8 @@ class CBtnTextError extends _Ctext {
 class CBtnTextSuccess extends _Ctext {
   const CBtnTextSuccess(String text,
       {Key? key,
-        TextAlign textAlign = TextAlign.start,
-        TextOverflow textOverflow = TextOverflow.visible})
+      TextAlign textAlign = TextAlign.start,
+      TextOverflow textOverflow = TextOverflow.visible})
       : super(text: text, textAlign: textAlign, textOverflow: textOverflow);
 
   @override
