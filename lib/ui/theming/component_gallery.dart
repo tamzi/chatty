@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:chatty/ui/theming/utils/scale.dart' as scale;
 import 'package:chatty/ui/theming/theme.dart';
 import 'atoms/ccolors.dart';
 import 'atoms/ctexts.dart';
 import 'components/c_plain_buttons.dart';
 import 'components/cbuttons.dart';
+/*
+more information about how to set this screen up and use check out:
+  https://github.com/tamzi/core_theming
+*/
+
 
 void main() {
   runApp(CTheme(
-      child: MaterialApp(
-    title: "Chatty Component Gallery",
-    home: GalleryRoot(),
-    routes: {
-      '/texts': (context) => TextsGallery(),
-      '/buttons': (context) => ButtonsGallery(),
-      '/Card': (context) => CardGallery(),
-      '/listTiles': (context) => ListTilesGallery(),
-    },
+      child: const GetMaterialApp(
+        title: "Chatty Component Gallery",
+        home: GalleryRoot(),
   )));
 }
 
@@ -46,7 +46,7 @@ class GalleryRoot extends StatelessWidget {
                   "This will show a list of all the text items.",
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, '/texts');
+                  Get.to(() => const TextsGallery());
                 },
               ),
               const Divider(),
@@ -57,7 +57,8 @@ class GalleryRoot extends StatelessWidget {
                 subtitle: const CDescriptionText(
                     "This will show a list of all the button widgets."),
                 onTap: () {
-                  Navigator.pushNamed(context, "/buttons");
+                  Get.to(() => const ButtonsGallery());
+
                 },
               ),
               const Divider(),
@@ -67,7 +68,7 @@ class GalleryRoot extends StatelessWidget {
                 subtitle: const CDescriptionText(
                     "Chatty Card Gallery. Can be tapped."),
                 onTap: () {
-                  Navigator.pushNamed(context, "/Card");
+                  Get.to(() => const CardGallery());
                 },
               ),
               const Divider(),
@@ -79,7 +80,7 @@ class GalleryRoot extends StatelessWidget {
                   subtitle: const CDescriptionText(
                       "Tiles layout with various information. Can be tapped."),
                   onTap: () {
-                    Navigator.pushNamed(context, "/listTiles");
+                    Get.to(() => const ListTilesGallery());
                   }),
               const Divider(),
 

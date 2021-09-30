@@ -4,17 +4,14 @@ import 'package:chatty/ui/theming/theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:chatty/ui/theming/utils/scale.dart' as scale;
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 
 void main() {
   runApp(CTheme(
-      child: const MaterialApp(
+      child: const GetMaterialApp(
         title: "Chatty Component Gallery",
         home: RegistrationScreen(),
-        routes: {
-         /* '/texts': (context) => TextsGallery(),
-          '/buttons': (context) => ButtonsGallery(),*/
-        },
       )));
 }
 
@@ -42,7 +39,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           backgroundColor: CThemeColors.deepGray,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(scale.value(10.0)),
           child: ListView(
             children: const <Widget>[
               Divider(),

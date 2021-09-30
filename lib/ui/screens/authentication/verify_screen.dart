@@ -30,7 +30,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
           backgroundColor: CThemeColors.deepGray,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(scale.value(10.0)),
           child: ListView(
             children: const <Widget>[
               Divider(),
