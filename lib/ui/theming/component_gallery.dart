@@ -1,26 +1,23 @@
-
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:chatty/ui/theming/utils/scale.dart' as scale;
 import 'package:chatty/ui/theming/theme.dart';
 import 'atoms/ccolors.dart';
 import 'atoms/ctexts.dart';
 import 'components/c_plain_buttons.dart';
 import 'components/cbuttons.dart';
-
+/*
+more information about how to set this screen up and use check out:
+  https://github.com/tamzi/core_theming
+*/
 
 
 void main() {
   runApp(CTheme(
-      child: MaterialApp(
+      child: const GetMaterialApp(
         title: "Chatty Component Gallery",
         home: GalleryRoot(),
-        routes: {
-          '/texts': (context) => TextsGallery(),
-          '/buttons': (context) => ButtonsGallery(),
-          '/Card': (context) => CardGallery(),
-          '/listTiles': (context) => ListTilesGallery(),
-        },
-      )));
+  )));
 }
 
 class GalleryRoot extends StatelessWidget {
@@ -49,7 +46,7 @@ class GalleryRoot extends StatelessWidget {
                   "This will show a list of all the text items.",
                 ),
                 onTap: () {
-                  Navigator.pushNamed(context, '/texts');
+                  Get.to(() => const TextsGallery());
                 },
               ),
               const Divider(),
@@ -60,28 +57,30 @@ class GalleryRoot extends StatelessWidget {
                 subtitle: const CDescriptionText(
                     "This will show a list of all the button widgets."),
                 onTap: () {
-                  Navigator.pushNamed(context, "/buttons");
+                  Get.to(() => const ButtonsGallery());
+
                 },
               ),
               const Divider(),
               ListTile(
                 //TextButton
                 title: const CTitle("Chatty Cards"),
-                subtitle: const CDescriptionText("Chatty Card Gallery. Can be tapped."),
+                subtitle: const CDescriptionText(
+                    "Chatty Card Gallery. Can be tapped."),
                 onTap: () {
-                  Navigator.pushNamed(context, "/Card");
+                  Get.to(() => const CardGallery());
                 },
               ),
               const Divider(),
 
               /// ListsGallery
               ListTile(
-                //SlideButton
+                  //SlideButton
                   title: const CTitle("Chatty Lists Gallery"),
                   subtitle: const CDescriptionText(
                       "Tiles layout with various information. Can be tapped."),
                   onTap: () {
-                    Navigator.pushNamed(context, "/listTiles");
+                    Get.to(() => const ListTilesGallery());
                   }),
               const Divider(),
 
@@ -191,7 +190,8 @@ class ButtonsGallery extends StatelessWidget {
                   child: CPlainFlatButton(
                     label: 'Am CPlainFlatButton',
                     onPressed: () {
-                      print('You tapped on PLain Button with text Apply for job');
+                      print(
+                          'You tapped on PLain Button with text Apply for job');
                     },
                   ),
                 ),
@@ -201,7 +201,8 @@ class ButtonsGallery extends StatelessWidget {
                   child: CWarningFlatButton(
                     label: 'Am CWarningFlatButton',
                     onPressed: () {
-                      print('You tapped on PLain Button with text Apply for job');
+                      print(
+                          'You tapped on PLain Button with text Apply for job');
                     },
                   ),
                 ),
@@ -211,12 +212,12 @@ class ButtonsGallery extends StatelessWidget {
                   child: CSuccessFlatButton(
                     label: 'Am CSuccessFlatButton',
                     onPressed: () {
-                      print('You tapped on PLain Button with text Apply for job');
+                      print(
+                          'You tapped on PLain Button with text Apply for job');
                     },
                   ),
                 ),
                 const Divider(),
-
               ]),
             ),
           ),
@@ -280,7 +281,7 @@ class ListTilesGallery extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: CAppBarHeader('List Tiles'),
+          title: const CAppBarHeader('List Tiles'),
           centerTitle: true,
           elevation: 3,
           backgroundColor: CThemeColors.deepGray,
@@ -289,7 +290,7 @@ class ListTilesGallery extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(scale.value(20.0)),
             child: SingleChildScrollView(
-              child: Column(children: <Widget>[]),
+              child: Column(children: const <Widget>[]),
             ),
           ),
         ));

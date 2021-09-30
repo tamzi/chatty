@@ -30,7 +30,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   cupertino_icons: ^1.0.2
   carousel_slider:
   carousel_pro:
@@ -43,6 +42,7 @@ dependencies:
   custom_switch_button:
   auto_size_text:
   logger:
+  get:
 
 dev_dependencies:
   flutter_test:
